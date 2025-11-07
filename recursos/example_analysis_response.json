@@ -1,0 +1,212 @@
+{
+  "analysis_metadata": {
+    "model": "GPT-OSS-20B",
+    "analysis_date": "2025-10-26",
+    "input_audit_name": "Healthcare ISMS Audit",
+    "data_points_analyzed": 15,
+    "language_detected": "English",
+    "notes": "All data points present and consistent."
+  },
+  "overall_summary": {
+    "total_questions": 15,
+    "yes_count": 6,
+    "no_count": 9,
+    "other_count": 0,
+    "compliance_percentage": 40.0,
+    "general_assessment": "Predominantly non-compliant with significant gaps in technical controls; some strong areas in physical security and training."
+  },
+  "themes_overview": [
+    {
+      "theme_name": "Governance & Policy",
+      "related_questions": [1, 8, 9, 12, 13, 15, 11],
+      "yes_count": 4,
+      "no_count": 3,
+      "compliance_percentage": 57.14,
+      "trend": "Moderate compliance; procedural gaps but overall positive.",
+      "relevant_observations": [
+        "Policy approved but only confidentiality addressed.",
+        "Incident procedure exists but implementation deficient.",
+        "ISO non-compliance due to unauthorized access.",
+        "Contracts lack security clauses."
+      ]
+    },
+    {
+      "theme_name": "Access Control",
+      "related_questions": [2, 3],
+      "yes_count": 0,
+      "no_count": 2,
+      "compliance_percentage": 0.0,
+      "trend": "Non-compliance; lack of account deletion and least privilege enforcement.",
+      "relevant_observations": [
+        "Former employee accounts not deleted.",
+        "Excessive access to clinical data by production staff."
+      ]
+    },
+    {
+      "theme_name": "Logging & Monitoring",
+      "related_questions": [4, 14],
+      "yes_count": 0,
+      "no_count": 2,
+      "compliance_percentage": 0.0,
+      "trend": "Non-compliance; logging and monitoring not implemented.",
+      "relevant_observations": [
+        "Software does not record full traceability of changes.",
+        "Indicators defined but no ongoing monitoring."
+      ]
+    },
+    {
+      "theme_name": "Backup & Recovery",
+      "related_questions": [5],
+      "yes_count": 0,
+      "no_count": 1,
+      "compliance_percentage": 0.0,
+      "trend": "Non-compliance; no automatic backups.",
+      "relevant_observations": [
+        "No automatic or external backups; not encrypted."
+      ]
+    },
+    {
+      "theme_name": "Encryption & Data Protection",
+      "related_questions": [6],
+      "yes_count": 0,
+      "no_count": 1,
+      "compliance_percentage": 0.0,
+      "trend": "Non-compliance; no TLS encryption.",
+      "relevant_observations": [
+        "Connections not TLS-compliant; backups legible in clear text."
+      ]
+    },
+    {
+      "theme_name": "Physical Security",
+      "related_questions": [7],
+      "yes_count": 1,
+      "no_count": 0,
+      "compliance_percentage": 100.0,
+      "trend": "Full compliance; physical access controls in place.",
+      "relevant_observations": [
+        "Physical access controls documented in laboratories and servers."
+      ]
+    },
+    {
+      "theme_name": "Training & Awareness",
+      "related_questions": [10],
+      "yes_count": 1,
+      "no_count": 0,
+      "compliance_percentage": 100.0,
+      "trend": "Full compliance; training provided.",
+      "relevant_observations": [
+        "Training provided but coverage of >90% of staff not evidenced."
+      ]
+    }
+  ],
+  "answer_patterns": {
+    "distribution": {
+      "Yes": 6,
+      "No": 9,
+      "N/A": 0
+    },
+    "most_common_answer": "No",
+    "pattern_description": "Majority of controls are not met, indicating significant gaps."
+  },
+  "remarks_analysis": {
+    "remark_coverage": {
+      "questions_with_remarks": 15,
+      "questions_without_remarks": 0,
+      "coverage_percentage": 100.0
+    },
+    "common_terms": ["policy", "training", "encryption"],
+    "tone_summary": "Factual and descriptive, with emphasis on deficiencies.",
+    "consistency_with_answers": "Remarks align with Yes/No answers.",
+    "insight_summary": [
+      "Policy approved but only confidentiality addressed.",
+      "Former employee accounts not deleted.",
+      "Excessive access to clinical data by production staff.",
+      "Software does not record full traceability of changes.",
+      "No automatic or external backups; not encrypted.",
+      "Connections not TLS-compliant; backups legible in clear text.",
+      "Physical access controls documented in laboratories and servers.",
+      "Incident procedure exists but implementation deficient.",
+      "ISO non-compliance due to unauthorized access.",
+      "Contracts lack security clauses.",
+      "Documents consolidated in a digital repository but systematization lacking.",
+      "Quality control software not validated.",
+      "Indicators defined but no ongoing monitoring.",
+      "Corrective actions recorded."
+    ]
+  },
+  "data_quality": {
+    "missing_answers": 0,
+    "ambiguous_entries": 0,
+    "duplicated_questions": 0,
+    "format_issues": 0,
+    "overall_data_quality_score": 100.0,
+    "observations": "Data appears complete, consistent, and coherent."
+  },
+  "interpretation_summary": {
+    "key_patterns_detected": [
+      "High non-compliance in technical controls",
+      "Strong compliance in physical security and training"
+    ],
+    "critical_areas": [
+      {
+        "theme": "Data Protection",
+        "description": "Observed lack of encryption in backups and communication channels."
+      }
+    ],
+    "strong_areas": [
+      {
+        "theme": "Physical Security",
+        "description": "Physical access controls fully implemented."
+      },
+      {
+        "theme": "Training & Awareness",
+        "description": "Training provided to staff."
+      }
+    ],
+    "notable_anomalies": [
+      "None"
+    ]
+  },
+  "statistical_summary": {
+    "themes_ranked_by_compliance": [
+      {
+        "theme": "Physical Security",
+        "compliance_percentage": 100.0,
+        "question_count": 1
+      },
+      {
+        "theme": "Training & Awareness",
+        "compliance_percentage": 100.0,
+        "question_count": 1
+      },
+      {
+        "theme": "Governance & Policy",
+        "compliance_percentage": 57.14,
+        "question_count": 7
+      },
+      {
+        "theme": "Access Control",
+        "compliance_percentage": 0.0,
+        "question_count": 2
+      },
+      {
+        "theme": "Logging & Monitoring",
+        "compliance_percentage": 0.0,
+        "question_count": 2
+      },
+      {
+        "theme": "Backup & Recovery",
+        "compliance_percentage": 0.0,
+        "question_count": 1
+      },
+      {
+        "theme": "Encryption & Data Protection",
+        "compliance_percentage": 0.0,
+        "question_count": 1
+      }
+    ],
+    "average_remark_length": 11.47,
+    "variance_in_compliance": 1973.93,
+    "estimated_risk_index": 60.0
+  }
+}

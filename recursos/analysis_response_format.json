@@ -1,0 +1,100 @@
+{
+  "analysis_metadata": {
+    "model": "GPT-OSS-20B",
+    "analysis_date": "<your_response>",
+    "input_audit_name": "<your_response>",
+    "data_points_analyzed": 0,
+    "language_detected": "<your_response>",
+    "notes": "<your_response>",
+    "complete_analysis": "A complete summary, analysis, conclusion, and recommendations. for the audit report (just paragraphs form (VARIOUS PARAGRAPHS)- no lists). IN SPANISH"
+  },
+  "overall_summary": {
+    "total_questions": 0,
+    "yes_count": 0,
+    "no_count": 0,
+    "other_count": 0,
+    "compliance_percentage": 0.0,
+    "general_assessment": "<your_response>"
+  },
+  "themes_overview": [
+    {
+      "theme_name": "Access Control",
+      "related_questions": [1, 2, 5],
+      "yes_count": 0,
+      "no_count": 0,
+      "compliance_percentage": 0.0,
+      "trend": "Description of the trend observed in this theme (e.g., weak enforcement, strong compliance).",
+      "relevant_observations": [
+        "Summarized remark or behavior pattern found in this theme"
+      ]
+    }
+  ],
+  "answer_patterns": {
+    "distribution": {
+      "Yes": 0,
+      "No": 0,
+      "N/A": 0
+    },
+    "most_common_answer": "Yes or No",
+    "pattern_description": "Describe what this distribution suggests about the audit (e.g., 'more technical gaps than procedural ones')."
+  },
+  "remarks_analysis": {
+    "remark_coverage": {
+      "questions_with_remarks": 0,
+      "questions_without_remarks": 0,
+      "coverage_percentage": 0.0
+    },
+    "common_terms": ["password", "policy", "training"],
+    "tone_summary": "Describe tone of remarks (neutral, defensive, factual, incomplete, etc.)",
+    "consistency_with_answers": "Describe whether remarks generally align with Yes/No answers",
+    "insight_summary": [
+      "Short list of objective insights extracted from remarks only"
+    ]
+  },
+  "data_quality": {
+    "missing_answers": 0,
+    "ambiguous_entries": 0,
+    "duplicated_questions": 0,
+    "format_issues": 0,
+    "overall_data_quality_score": 0.0,
+    "observations": "Describe if data appears complete, consistent, and coherent."
+  },
+  "interpretation_summary": {
+    "key_patterns_detected": [
+      "Pattern or tendency #1",
+      "Pattern or tendency #2"
+    ],
+    "critical_areas": [
+      {
+        "theme": "Data Protection",
+        "description": "Observed lack of encryption in backups and communication channels."
+      }
+    ],
+    "strong_areas": [
+      {
+        "theme": "Training & Awareness",
+        "description": "Consistent positive answers and complete supporting remarks."
+      }
+    ],
+    "notable_anomalies": [
+      "Cases where remarks contradict the provided Yes/No answers."
+    ]
+  },
+  "statistical_summary": {
+    "themes_ranked_by_compliance": [
+      {
+        "theme": "Physical Security",
+        "compliance_percentage": 95.0,
+        "question_count": 5
+      },
+      {
+        "theme": "Access Control",
+        "compliance_percentage": 60.0,
+        "question_count": 8
+      }
+    ],
+    "average_remark_length": 0,
+    "variance_in_compliance": 0.0,
+    "estimated_risk_index": 0.0
+  }
+}
