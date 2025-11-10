@@ -29,8 +29,9 @@ class AuditAnalyzer:
             image_b64 = chart.render(self.data)
 
             prompt = chart.build_ai_prompt(self.base_prompt, self.data.raw)
-            analysis = self.ai.analyze(prompt)
+            # analysis = self.ai.analyze(prompt)
 
+            analysis = "hola"
             results.append(ChartResult(name=chart.name, image_b64=image_b64, analysis=analysis))
 
         return [r.to_dict() for r in results]
