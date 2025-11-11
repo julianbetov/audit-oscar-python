@@ -46,10 +46,10 @@ async def analisis(auditoria_id: int):
     audit_analysis_prompt = audit_analysis_prompt.replace("{{AUDIT_DATA}}", json.dumps(audit_data_json, indent=4))
 
     # ----- Obtener analisis de IA -----
-    # audit_analysis_json = ai_client.analyze(audit_analysis_prompt)
-    # audit_analysis_json = extract_json_block(audit_analysis_json)
-    # audit_analysis_json = json.loads(audit_analysis_json)
-    audit_analysis_json = json.loads(load_file_from_resource("example_analysis_response", "json"))
+    audit_analysis_json = ai_client.analyze(audit_analysis_prompt)
+    audit_analysis_json = extract_json_block(audit_analysis_json)
+    audit_analysis_json = json.loads(audit_analysis_json)
+    # audit_analysis_json = json.loads(load_file_from_resource("example_analysis_response", "json"))
 
     # ----- Generar graficas -----
     charts_analyzer = AuditAnalyzer(chart_analysis_prompt, audit_analysis_json, ai_client)
